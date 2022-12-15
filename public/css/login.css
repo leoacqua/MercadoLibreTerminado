@@ -1,0 +1,376 @@
+:root {
+
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+
+}
+
+/*-------------------------------HEADER-----------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.header {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--Amarillo);
+    width: 100vw;
+    font-size: 12px;
+}
+
+/*-------CONTENEDOR HEADER 1--------*/
+
+.contenedor-header-1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    align-content: center;
+    align-items: center;
+}
+
+/*------CAJA DEL LOGO MERCADOLIEBRE-----*/
+
+.logo2 {
+    width: 40%;
+}
+
+/*---------LOGO DE MERCADOLIBRE------*/
+
+.logo {
+    max-width: 100%;
+    text-align: center;
+
+}
+
+/*-------CAJA DEL SEARCH----------*/
+
+.icon {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*-------INPUT------------*/
+
+.buscador {
+    width: 80%;
+    height: 60%;
+    border-radius: 8px;
+    padding: 10px;
+    border: none
+}
+
+/*-----TEXTO COMPRA EN CUOTAS-----*/
+
+.cuotas {
+    text-align: center;
+    font-size: 12px;
+    padding: 12px;
+}
+
+/*------NAVBAR CONTENEDOR-----*/
+
+.barra-navegador {
+
+    margin-top: 2%;
+    display: none
+}
+
+/*------TEXTO LI NAVBAR------*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+
+    list-style: none;
+}
+
+/*---------CAJA BURGUER MENU------*/
+
+.burguer {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 2%;
+}
+
+/*------ICONO BURGUER MENU------*/
+
+.fa-bars {
+    background-color: #1259c3;
+    color: white;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+/*-------BANNER--------*/
+
+#banner {
+    width: 100%;
+}
+
+/*----------------------------------MAIN-------------------------------*/
+
+main {
+    background-color: var(--Gris-claro);
+}
+
+.login {
+    padding: 2% 2%;
+}
+
+.nombre-usuario {
+    text-align: center;
+    margin-bottom: 4%;
+
+}
+
+.contraseña {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+input {
+    height: 4vw;
+    width: 60vw;
+    border: none;
+    border-radius: 3px;
+    padding: 1%;
+}
+
+.control-login {
+    text-align: center;
+}
+
+.envio {
+    height: 4vw;
+    width: 60vw;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--Celeste);
+    font-weight: bold;
+}
+
+.envio:hover {
+
+    background-color: #0022AA;
+}
+
+
+/*-------------------------FOOTER-----------------------------------------*/
+
+footer {
+    font-size: 12px
+}
+
+/*----TARJETA E ICONO-----*/
+
+.tarjeta {
+    padding: 20px;
+    text-align: center;
+}
+
+.fa-credit-card {
+    color: var(--Azul);
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.tarjeta:hover i {
+   color: var(--Celeste);
+}
+
+
+/*--------ENVIO E ICONO------*/
+
+.envio2 {
+    padding: 20px;
+    text-align: center
+}
+
+.fa-gift {
+    color: var(--Azul);
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.envio2:hover i {
+    color: var(--Celeste);
+}
+
+/*-----SEGURIDAD E ICONO-----*/
+
+.seguridad {
+    padding: 20px;
+    text-align: center
+}
+
+.fa-user-shield {
+    color: var(--Azul);
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.seguridad:hover i {
+
+    color: var(--Celeste);
+}
+
+/*-----COPYRIGHT-----*/
+
+.copyright {
+    padding: 20px;
+    text-align: center
+}
+
+.copy {
+    text-align: left;
+}
+
+/*-----------------------MEDIA QUERI MIN 361--------------------*/
+
+@media (min-width: 361px) {
+
+    /*-------------------------------HEADER------------------------*/
+
+    /*------CAJA DEL LOGO MERCADOLIEBRE-----*/
+
+    .logo2 {
+        width: 30%;
+    }
+
+    /*-------CAJA DEL SEARCH----------*/
+
+    .icon {
+        width: 30%;
+        align-self: center;
+    }
+
+    /*-----TEXTO COMPRA EN CUOTAS-----*/
+
+    .cuotas {
+        width: 30%;
+        padding: 0;
+    }
+
+    /*---------CAJA BURGUER MENU------*/
+
+    .burguer {
+        display: none
+    }
+
+    /*------NAVBAR CONTENEDOR-----*/
+
+    .barra-navegador {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 12px
+    }
+
+    /*-------LISTAS NAVBAR-----------*/
+
+    .lista-flex1,
+    .lista-flex2 {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    /*-------------------------------MAIN--------------------------------*/
+
+    /*-------CONTENEDOR ULTIMA VISTA-------*/
+
+    .ultima-vista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    /*--------CONTENEDOR OFERTAS--------*/
+
+    .ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px
+    }
+
+    /*-----DOS ARTICULOS POR PANTALLA Y BOX SHADOW-----*/
+
+    .article {
+        font-size: 12px;
+        margin-bottom: 10px;
+        width: 45%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+
+    /*--------CONTENEDOR PRECIO DESC-----*/
+
+    .precio-desc {
+        display: flex;
+    }
+
+    .precio {
+        font-size: 0.8rem;
+        width: 60%;
+    }
+
+    .descuento {
+
+        font-size: 0.8rem;
+        text-align: end
+    }
+
+}
+
+/*-----------------------MEDIA QUERI MIN 769--------------------*/
+
+@media (min-width: 769px) {
+
+    /*-------CUATRO ARTICULOS POR PANTALLA------*/
+
+    .article {
+        width: 20%
+    }
+
+    /*-------------------FOOTER----------------------*/
+
+    /*---------CONTENEDOR FOOTER--------*/
+
+    .contenedor-foot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+
+    /*------------CAJAS ALINEADAS-------*/
+
+    .tarjeta,
+    .envio2,
+    .seguridad {
+
+        width: 30%;
+    }
+}
