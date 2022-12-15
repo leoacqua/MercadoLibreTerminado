@@ -6,13 +6,12 @@ const app = express();
 
 const path = require('path');
 
-// const publicPath = path.resolve (__dirname,'./public');
-// app.use (express.static(publicPath));
-
 app.use (express.static('public'))
 
-app.listen(3033,()=> 
-console.log("Servidor corriendo en http://localhost:3033")
+const port = process.env.PORT || 3003;
+
+app.listen(port,()=> 
+console.log("Servidor corriendo en http://localhost:" + port)
 );
 
 app.get('/',(req,res)=>{
