@@ -22,7 +22,7 @@
                 <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" />
             </div>
             <div class="icon">
-                <input class="buscador" type="search" placeholder="Buscar articulos, marcas"><i
+                <input class="buscador" type="search" placeholder="Buscar artículos, marcas y más..."><i
                     class="fa fa-search"></i>
             </div>
             <div class="cuotas">
@@ -60,11 +60,11 @@
         <form action="register.html" method="POST" class="registro-usuario">
 
             <div class="nombre-apellido">
-                <input type="text" name="nombre" placeholder="Nombre y apellido">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required minlength="12">
             </div>
 
             <div class="nombre-usuario">
-                <input type="texto" name="nombreDeUsuario" placeholder="Nombre de usuario">
+                <input type="texto" name="nombreDeUsuario" placeholder="Nombre de usuario" required minlength="3">
             </div>
 
             <div class="email">
@@ -76,7 +76,7 @@
                 <br>
             </div>
             <div class="nac">
-                <input type="date" name="nacimiento" placeholder="mm/ddd/yyyy">
+                <input type="date" name="nacimiento" placeholder="mm/ddd/yyyy" required>
             </div>
 
 
@@ -85,7 +85,7 @@
                 <br>
             </div>
             <div class="dom">
-                <input type="text" name="dirección">
+                <input type="text" name="dirección" required minlength="4">
             </div>
 
             <div class="perfil-usuario">
@@ -93,9 +93,9 @@
             </div>
             <div class="comprador-vendedor">
                 <label>Comprador</label>
-                <input type="radio" name="compraVenta" value="Comprador" class="compra">
+                <input type="radio" name="compraVenta" value="Comprador" class="compra" required>
                 <Label>Vendedor</Label>
-                <input type="radio" name="compraVenta" value="Vendedor" class="vende">
+                <input type="radio" name="compraVenta" value="Vendedor" class="vende" required>
             </div>
 
             <div class="categorias-interes">
@@ -125,14 +125,14 @@
                 <label for="">Foto de perfil</label>
             </div>
 
-            <input type="file" name="imagen-usuario" id="imagen-usuario" class="imagen-usua" required >
+            <input type="file" name="imagen-usuario" id="imagen-usuario" class="imagen-usua" required>
 
             <div class="contraseña">
-                <input type="password" name="clave" placeholder="Contraseña" class="contrase">
+                <input type="password" name="clave" placeholder="Contraseña" class="contrase" required minlength="8">
             </div>
 
             <div class="confirmar-contraseña">
-                <input type="password" name="clave" placeholder="Confirma contraseña" class="confirma-contra">
+                <input type="password" name="clave" placeholder="Confirma contraseña" class="confirma-contra" required minlength="8">
             </div>
 
             <div class="enviar-borrar">
